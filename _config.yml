@@ -1,38 +1,18 @@
-# GitHub Pages Configuration for Personal Portfolio
+title: "Chenyu Kevin Zhang | Robotics & Embodied AI"
+description: "HKUST CSE undergraduate researching robotics, dexterous manipulation, embodied AI, and human–robot interaction."
+author: "Chenyu Zhang"
+email: "czhangew@connect.ust.hk"
+url: "https://kevin-freshman.github.io"
+baseurl: "/ChenyuZhangPersonalPage"
+timezone: "Asia/Hong_Kong"
 
-# Site settings
-title: "Personal Portfolio"
-description: "A clean and responsive personal portfolio website built with Bootstrap 5"
-author: "Your Name"
-email: "youremail@email.com"
-
-# GitHub Pages will automatically set these when deployed
-# Leave empty for local development, GitHub will populate them
-url: ""
-baseurl: ""
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
-# GitHub Pages compatible plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# SEO and social media (optional)
-# Uncomment and update these if you want enhanced SEO
-# twitter:
-#   username: your_twitter_handle
-#   card: summary
+github_username: "Kevin-freshman"
 
-# linkedin:
-#   username: your_linkedin_username
-
-# github_username: your_github_username
-
-# Exclude files from processing
 exclude:
   - README.md
   - Gemfile
@@ -43,27 +23,3 @@ exclude:
   - .sass-cache
   - .jekyll-cache
   - .jekyll-metadata
-
-# Include files that start with underscore (if any)
-include:
-  - _pages
-
-# Timezone (optional but recommended)
-timezone: UTC
-
-# GitHub Pages settings
-github: [metadata]
-
-# Collections (if you plan to add blog posts or projects later)
-# collections:
-#   projects:
-#     output: true
-#     permalink: /:collection/:name/
-
-# Default front matter (if you convert to Jekyll later)
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
