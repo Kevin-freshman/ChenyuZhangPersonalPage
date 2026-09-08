@@ -46,3 +46,4 @@ pids
 # Temporary folders
 tmp/
 temp/
+dist/

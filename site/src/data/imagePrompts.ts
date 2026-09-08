@@ -1,0 +1,4 @@
+export const imagePrompts = [
+  { id: 'teleoperation', filename: 'teleoperation.png', section: 'Hero / Research', aspectRatio: '2.4:1', sourceMode: 'approved concept cover', prompt: 'Editorial concept still-life of a charcoal IMU glove reaching toward an ivory articulated robotic hand on pale limestone. Warm cream, copper wiring, soft daylight. No text or logos.', alt: 'AI-generated concept illustration of a sensing glove facing a robotic hand; not a photograph of the project.' },
+  { id: 'interaction', filename: 'interaction.png', section: 'Hero / Research', aspectRatio: '2.4:1', sourceMode: 'approved concept cover', prompt: 'Small neutral cream robot and abstract stone human profile connected by terracotta acoustic ribbons. Warm limestone, soft daylight. No text, logos, charts or interface.', alt: 'AI-generated concept illustration of conversational timing between a robot and a person; not an experiment or measured data.' },
+];

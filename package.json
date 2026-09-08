@@ -1,0 +1,29 @@
+{
+  "name": "chenyu-zhang-field-notes",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build && node scripts/prerender.mjs && node scripts/verify-build.mjs && node scripts/publish-root.mjs",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "framer-motion": "^12.0.0",
+    "lucide-react": "^0.468.0",
+    "@fontsource-variable/newsreader": "^5.2.0",
+    "@fontsource-variable/dm-sans": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "vite": "8.2.2",
+    "typescript": "^5.9.0",
+    "tailwindcss": "3.4.19",
+    "postcss": "^8.5.0",
+    "autoprefixer": "^10.4.0"
+  }
+}
