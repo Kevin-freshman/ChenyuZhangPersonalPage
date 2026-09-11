@@ -39,9 +39,15 @@ export default function App() {
             <p className="hero-description">{profile.summary}</p>
             <p className="hero-note">Dexterous manipulation.<br />Robots that interact with people.</p>
           </div>
-          <motion.div className="hero-plates" initial={{ y: 8 }} animate={{ y: 0 }} transition={{ duration: 0.65, ease: 'easeOut' }}>
-            <ResearchPlate kind="teleoperation" title="Hand teleoperation" number="01" compact />
-            <ResearchPlate kind="interaction" title="Human–robot turn-taking" number="02" compact />
+          <motion.div className="hero-visuals" initial={{ y: 8 }} animate={{ y: 0 }} transition={{ duration: 0.65, ease: 'easeOut' }}>
+            <figure className="profile-portrait">
+              <img src="/ChenyuZhangPersonalPage/profile/chenyu-zhang.webp" alt="Portrait of Chenyu Kevin Zhang" width="700" height="900" loading="eager" decoding="async" />
+              <figcaption><span>Chenyu “Kevin” Zhang</span><span>HKUST · Hong Kong</span></figcaption>
+            </figure>
+            <div className="hero-plates">
+              <ResearchPlate kind="teleoperation" title="Hand teleoperation" number="01" compact />
+              <ResearchPlate kind="interaction" title="Human–robot turn-taking" number="02" compact />
+            </div>
           </motion.div>
         </div>
         <div className="hero-bottom">
@@ -65,8 +71,11 @@ export default function App() {
           <article className="project-row quant-project">
             <span className="project-row-number">01</span><div><p className="eyebrow rust">Quant / Prediction markets</p><h3>Polymarket analytics</h3><p>A Blockspace project studying prediction-market trading behavior. I work with on-chain activity and account-level trading data to examine performance and trading patterns.</p><div className="tool-line"><span>Python</span><span>Data pipelines</span><span>On-chain analysis</span></div></div><a href={profile.quant} className="project-repo" target="_blank" rel="noopener noreferrer">View project <ArrowUpRight size={19} aria-hidden="true" /></a>
           </article>
+          <article className="project-row quant-hackathon">
+            <span className="project-row-number">02</span><div><p className="eyebrow rust">Quant / Freshman fall · Team 48</p><h3>HK Uni Quant Trading Hackathon</h3><p>Led Team 48 in building a Python crypto-trading bot that translated hourly momentum across 56 assets into target positions. I worked on strategy development, quantitative analysis and layered risk controls for drawdown, concentration and daily loss.</p><div className="tool-line"><span>Team captain</span><span>Python</span><span>Momentum</span><span>Risk management</span><span>Trading API</span></div></div><a href="https://github.com/Kevin-freshman/hackathon" className="project-repo" target="_blank" rel="noopener noreferrer">View project <ArrowUpRight size={19} aria-hidden="true" /></a>
+          </article>
           <article className="project-row">
-            <span className="project-row-number">02</span><div><p className="eyebrow">Robotics / Computer vision</p><h3>RoboMaster · ColorCapture</h3><p>Computer-vision work for an HKUST robotics competition, using Python and OpenCV for color detection and object tracking.</p><div className="tool-line"><span>Python</span><span>OpenCV</span><span>Robot integration</span></div></div><span className="project-context">Team project<br />HKUST</span>
+            <span className="project-row-number">03</span><div><p className="eyebrow">Robotics / Computer vision</p><h3>RoboMaster · ColorCapture</h3><p>Computer-vision work for an HKUST robotics competition, using Python and OpenCV for color detection and object tracking.</p><div className="tool-line"><span>Python</span><span>OpenCV</span><span>Robot integration</span></div></div><span className="project-context">Team project<br />HKUST</span>
           </article>
           <a href={profile.github} className="text-link projects-github" target="_blank" rel="noopener noreferrer">More on GitHub <ArrowUpRight size={18} aria-hidden="true" /></a>
         </div>
